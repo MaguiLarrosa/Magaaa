@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+main{
+
+}
+form{
+    width: 100%;
+    max-width: 400px;
+    /* background: red; */
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    /* ahora creamos una animación para que cambie de color el fondo  */
+    animation: cambia-color 5s linear infinite;
+    background: -webkit-linear-gradient(left,rgb(194, 8, 236), rgb(252, 9, 9));
+    /* hay que poner el atributo de webkit para que funcione en el navegador */
+    background-size: 400% 400%;
+}
+@keyframes cambia-color{
+    0%{
+        background-position:0%, 50% ;
+    }
+    50%{
+        background-position: 100%, 50%;
+    }
+    100%{
+        background-position: 0%,100%; 
+        /* el position tiene que comenzar en 0% y terminar en 0 para que el degradé se note bien */
+    }
+}
+.title{
+       font-size: 14px;
+       text-align: center;
+       /* background: pink; cuando les ponemos colores es para identificar que quedó una cajita*/
+       font-weight: 100;
+       color: white;
+}
+/* .container-img{
+    text-align: center; */
+
+.logotipo{
+    width: 140px;
+    margin-top: 40px;
+} 
+/* para que la imag se centre hay que ponerla dentro de una etiqueta div */
+input[type="text"] { 
+width: 100%;
+padding: 14px;
+font-size: 16px;
+margin-top: 20px;
+background: rgba(255,255,255, 0.4);
+border-style: none;
+outline: 0px;
+color: #fff;
+}
+
+ ::placeholder{
+    color: white;
+
+}
+input[type="password"] { 
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    margin-top: 20px;
+    background: rgba(255,255,255, 0.4);
+    border-style: none;
+    outline: 0px;
+    }
+    input[type="button"] { 
+        width: 100%;
+        padding: 14px;
+        font-size: 14px;
+        font-weight: 100;
+        margin-top: 20px;
+        background: rgba(255,255,255, 0.2);
+        border-style: none;
+        border: 2px solid rgba(255,255,255, 0.4);
+        outline: 0px;
+        color: white;
+        transition: background 300ms;
+        }
+        input[type="button"]:hover{
+            cursor: pointer;
+            /* esto es para que aparezca la manito en el boton */
+            background: rgba(255,255,255, 0.6);
+        }
+
+        .container-data{
+            width:100%;
+            display:flex;
+            justify-content: center;
+            /* el justify se le pone al padre porque son arreglos generales */
+            margin-top: 20px;
+        }
+/* conatiner data es el padre de h4 */
+        .container-data h4{
+            font-size: 12px;
+            font-weight: 100;
+            color: white;
+            margin: 2px;
+        }
+        .container-data a{
+            font-size: 12px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            margin: 2px;
+        }
+        .container-or{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .container-or hr{
+            width: 160px;
+            height: 1px;
+            border-style: none;
+            background: #fff;
+            margin-top: 7px;
+        
+
+        }
+        .container-or h2{
+            font-size: 14px;
+            color: #fff;
+            
+        }
+        a{
+            text-decoration: none;
+           
+        }
+         a i{
+            color: white;
+            margin-top: 50px;
+            font-size: 22px;
+        }
+        a span{
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            margin-left:4px; 
+            
+        }
+
+        .container-register{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+        .container-register h4{
+            font-size: 14px;
+            font-weight: 100;
+            color: white;
+        }
+        .container-register a{
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-left: 4px;
+            color: #fff;
+        }
